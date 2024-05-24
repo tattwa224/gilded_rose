@@ -56,9 +56,9 @@ class BackStagePassStrategy:
         if item.quality < 50:
             item.quality += 1
             if item.sell_in < 10 and item.quality < 50:
-                item.quality += 1
+                item.quality += 2
             if item.sell_in < 5 and item.quality < 50:
-                item.quality += 1
+                item.quality += 3
         if item.sell_in < 0:
             item.quality = 0
         item.quality = min(item.quality, 50)

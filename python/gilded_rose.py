@@ -34,7 +34,7 @@ class NormalStrategy:
         if item.quality > 0:
             item.quality -= 1
         if item.sell_in < 0 and item.quality > 0:
-            item.quality -= 1
+            item.quality -= 2
         item.quality = max(item.quality, 0)
 
 class AgedBrieStrategy:
